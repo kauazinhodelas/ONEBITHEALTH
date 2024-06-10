@@ -36,21 +36,28 @@ export default function Form(){
             <View>
                 <Text>Altura</Text>
                 <TextInput
+                
+                onChangeText={setAltura}
+                value={altura}
                 placeholder="EX. 1.80"
                 keyboardType="numeric"
                 />
 
         <Text>Peso</Text>
                 <TextInput
+                onChangeText={setPeso}
+                value={peso}
                 placeholder="EX. 75.5"
                 keyboardType="numeric"
                 />
 
-                <Button title={textButton}/>
+                <Button 
+                onPress={() =>validation}
+                title={textButton}/>
 
             </View>
         <ResulImc
-        messageIMC={messageIMC}
+        messageResultImc={messageIMC}
         ResulImc={imc}
         />
         </View>
