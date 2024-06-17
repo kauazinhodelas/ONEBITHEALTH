@@ -52,7 +52,7 @@ export default function Form(){
                 />
 
                 <Button 
-                onPress={() =>validation}
+                onPress={() =>validation()}
                 title={textButton}/>
 
             </View>
